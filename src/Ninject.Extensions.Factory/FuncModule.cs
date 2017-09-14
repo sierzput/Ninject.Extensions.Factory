@@ -23,6 +23,7 @@ namespace Ninject.Extensions.Factory
 {
     using System;
     using System.Linq;
+    using System.Reflection;
 
 #if !SILVERLIGHT_20 && !WINDOWS_PHONE && !NETCF_35
     using Castle.DynamicProxy;
@@ -50,7 +51,7 @@ namespace Ninject.Extensions.Factory
             this.Bind<FuncProvider>().ToSelf().InSingletonScope();
             this.Bind<IFunctionFactory>().To<FunctionFactory>();
             this.Bind<IInstanceProvider>().To<StandardInstanceProvider>();
-#if !SILVERLIGHT_20 && !WINDOWS_PHONE && !NETCF_35
+#if !SILVERLIGHT_20 && !WINDOWS_PHONE && !NETCF_35 && !NETSTANDARD1_3
             this.Bind<IInterceptor>().To<FactoryInterceptor>()
                 .When(request => typeof(IFactoryProxy).IsAssignableFrom(request.Target.Member.ReflectedType));
 #endif
