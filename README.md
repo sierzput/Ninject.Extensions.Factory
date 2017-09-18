@@ -7,4 +7,4 @@ This Ninject extension allows to create factory implementations automatically.
 https://github.com/ninject/Ninject.Extensions.Factory/wiki
 
 ## CI build status
-[![Build Status](https://teamcity.bbv.ch/app/rest/builds/buildType:(id:bt21)/statusIcon)](http://teamcity.bbv.ch/viewType.html?buildTypeId=bt211&guest=1)
+[![Build status](https://ci.appveyor.com/api/projects/status/9h6fdclgqkjtadjg/branch/master?svg=true)](https://ci.appveyor.com/project/sierzput/ninject-extensions-factory/branch/master)
