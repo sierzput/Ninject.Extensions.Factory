@@ -1,4 +1,4 @@
-﻿//-------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------
 // <copyright file="AssemblyInfo.cs" company="bbv Software Services AG">
 //   Copyright (c) 2010 Software Services AG
 //   Remo Gloor (remo.gloor@gmail.com)
@@ -20,12 +20,6 @@
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Security;
-
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-[assembly: AssemblyTitle("Ninject.Extensions.Factory")]
-[assembly: AssemblyDescriptionAttribute("Ninject extension that allows to automatically create factories.")]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("39527a43-4711-438a-b3a8-63dc45fe45ee")]
